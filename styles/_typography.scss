@@ -1,0 +1,34 @@
+@import 'variables';
+@import 'colors';
+@import 'resetter';
+
+// Base styles for body text
+body {
+  font-family: $font-family-primary;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $light-text;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-primary;
+  line-height: $line-height-heading;
+  color: $dark-text;
+}
+
+h1 { font-size: 3.556rem; }
+h2 { font-size: 2.223rem; }
+h6 { font-size: 0.889rem; }
+
+
+
+
+// Other text elements
+strong {
+  font-weight: $font-weight-bold;
+}
+
+em {
+  font-style: italic;
+}
