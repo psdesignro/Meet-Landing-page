@@ -3,3 +3,25 @@
 @import "typography";
 @import "colors";
 @import "components";
+
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .offer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:2rem;
+    }
+
+    .left-image{
+        margin-left:-2rem;
+    }
+
+    .right-image{
+        margin-right: -2rem;
+    }
+}
