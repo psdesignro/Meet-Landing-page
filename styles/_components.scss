@@ -1,0 +1,28 @@
+
+//section divider
+
+.number-divider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical-line{
+    width: 1px;  
+    background-color:rgba($light-text, 0.25);
+    height: 84px; 
+    margin:0 auto;  
+
+}
+
+.number{
+    display:flex;
+    height: 56px;
+    width: 56px;
+    font-weight: $font-weight-black;
+   justify-content: center;
+   align-items: center;
+    border: 1px solid rgba($light-text, 0.25);
+    border-radius:100px;
+}
