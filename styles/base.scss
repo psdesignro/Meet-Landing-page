@@ -4,24 +4,97 @@
 @import "colors";
 @import "components";
 
-
-.hero{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .offer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap:2rem;
-    }
-
-    .left-image{
-        margin-left:-2rem;
-    }
-
-    .right-image{
-        margin-right: -2rem;
-    }
+@mixin text-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 540px;
+  gap: 2rem;
+  text-align: center;
 }
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+
+  h1,
+  p {
+    text-align: center;
+  }
+
+  .offer {
+    @include text-group;
+  }
+
+  .left-image {
+    margin-left: -2rem;
+  }
+
+  .right-image {
+    margin-right: -2rem;
+  }
+}
+
+.second-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .image-gallery {
+    display: flex;
+    max-width: 1110px;
+    gap: 30px;
+    justify-content: center;
+
+    picture img {
+      border-radius: 0.5rem;
+    }
+  }
+
+  .offer {
+    @include text-group;
+
+    .titles {
+      gap: 0.5rem;
+
+      h6 {
+        color: $primary-teal;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.banner {
+  display: flex;
+  height: 308px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-image: url("/starter-code/assets/desktop/image-footer.jpg");
+  background-size: cover;
+  background-position: center;
+
+  .text-offer{
+    padding: 100px 0px;
+    display: flex;
+    z-index: 99999;
+  }
+}
+
+.banner::before{
+    content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($primary-teal, 0.9);
+  pointer-events: none; 
+
+}
+

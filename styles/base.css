@@ -115,6 +115,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Red Hat Display", sans-serif;
   line-height: 1.2;
   color: hsl(240, 21%, 20%);
+  font-weight: 900;
 }
 
 h1 {
@@ -130,7 +131,7 @@ h6 {
 }
 
 strong {
-  font-weight: 700;
+  font-weight: 900;
 }
 
 em {
@@ -163,7 +164,7 @@ em {
   display: flex;
   height: 56px;
   width: 56px;
-  font-weight: 700;
+  font-weight: 900;
   justify-content: center;
   align-items: center;
   border: 1px solid rgba(134, 134, 156, 0.25);
@@ -174,16 +175,82 @@ em {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 3rem;
+}
+.hero h1,
+.hero p {
+  text-align: center;
 }
 .hero .offer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 540px;
   gap: 2rem;
+  text-align: center;
 }
 .hero .left-image {
   margin-left: -2rem;
 }
 .hero .right-image {
   margin-right: -2rem;
+}
+
+.second-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.second-section .image-gallery {
+  display: flex;
+  max-width: 1110px;
+  gap: 30px;
+  justify-content: center;
+}
+.second-section .image-gallery picture img {
+  border-radius: 0.5rem;
+}
+.second-section .offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 540px;
+  gap: 2rem;
+  text-align: center;
+}
+.second-section .offer .titles {
+  gap: 0.5rem;
+}
+.second-section .offer .titles h6 {
+  color: hsl(192, 37%, 48%);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.banner {
+  display: flex;
+  height: 308px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-image: url("/starter-code/assets/desktop/image-footer.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.banner .text-offer {
+  padding: 100px 0px;
+  display: flex;
+  z-index: 99999;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(77, 150, 168, 0.9);
+  pointer-events: none;
 }/*# sourceMappingURL=base.css.map */
