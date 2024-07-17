@@ -283,7 +283,7 @@ em {
   height: 308px;
   position: relative;
   width: 100%;
-  background-image: url("starter-code/assets/desktop/image-footer.jpg");
+  background-image: url("/starter-code/assets/desktop/image-footer.jpg");
   background-size: cover;
   background-position: center;
   justify-content: center;
