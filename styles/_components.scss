@@ -76,14 +76,19 @@
 }
 
 
-.banner  button{
-    align-self: center;
-    // max-height: 58px;
-   
-  }
-
 
 .button-group{
     display: flex;
     gap:1rem;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 58px;
+
+    button {
+        align-self:center;
+    }
 }

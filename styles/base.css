@@ -205,13 +205,19 @@ em {
   background-color: hsl(268, 100%, 86%);
 }
 
-.banner button {
-  align-self: center;
-}
-
 .button-group {
   display: flex;
   gap: 1rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 58px;
+}
+.button-container button {
+  align-self: center;
 }
 
 .hero {
