@@ -18,6 +18,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 64px;
+  position: relative;
+  z-index: 999999;
 }
 
 .vertical-line {
@@ -36,19 +39,21 @@
   align-items: center;
   border: 1px solid rgba($light-text, 0.25);
   border-radius: 100px;
+  background-color: $neutral-white;
 }
 
 
 //Buttons
 
 @mixin button-style{
-    display: flex;
+    // display: flex;
     border:none;
     padding: 1rem 2rem;
     border-radius: 100px;
     font-weight: $font-weight-black;
     font-size: $font-size-sm;
     color:$neutral-white;
+    white-space: nowrap;
 
 
     span{
@@ -62,16 +67,19 @@
     background-color: $primary-teal;
 
     &:hover{
-        background-color: $light-teal;
+        background-color: rgba($primary-teal, 0.7);
+        cursor:pointer;
     }
 }
 
 .secondary-button{
     @include button-style;
     background-color: $secondary-purple;
+    
 
     &:hover{
-        background-color: $light-purple;
+        background-color: rgba($secondary-purple, 0.8);
+        cursor:pointer;
     }
 }
 
@@ -82,13 +90,13 @@
     gap:1rem;
 }
 
-.button-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 58px;
+// .button-container{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     height: 58px;
 
-    button {
-        align-self:center;
-    }
-}
+    // .secondary-button {
+    //     align-self:center;
+    // }

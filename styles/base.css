@@ -151,6 +151,9 @@ em {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 64px;
+  position: relative;
+  z-index: 999999;
 }
 
 .vertical-line {
@@ -169,40 +172,43 @@ em {
   align-items: center;
   border: 1px solid rgba(134, 134, 156, 0.25);
   border-radius: 100px;
+  background-color: hsl(0, 0%, 98%);
 }
 
 .primary-button {
-  display: flex;
   border: none;
   padding: 1rem 2rem;
   border-radius: 100px;
   font-weight: 900;
   font-size: 16px;
   color: hsl(0, 0%, 98%);
+  white-space: nowrap;
   background-color: hsl(192, 37%, 48%);
 }
 .primary-button span {
   color: rgba(250, 250, 250, 0.4);
 }
 .primary-button:hover {
-  background-color: hsl(192, 90%, 77%);
+  background-color: rgba(77, 150, 168, 0.7);
+  cursor: pointer;
 }
 
 .secondary-button {
-  display: flex;
   border: none;
   padding: 1rem 2rem;
   border-radius: 100px;
   font-weight: 900;
   font-size: 16px;
   color: hsl(0, 0%, 98%);
+  white-space: nowrap;
   background-color: hsl(268, 34%, 53%);
 }
 .secondary-button span {
   color: rgba(250, 250, 250, 0.4);
 }
 .secondary-button:hover {
-  background-color: hsl(268, 100%, 86%);
+  background-color: rgba(132, 94, 176, 0.8);
+  cursor: pointer;
 }
 
 .button-group {
@@ -210,21 +216,12 @@ em {
   gap: 1rem;
 }
 
-.button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 58px;
-}
-.button-container button {
-  align-self: center;
-}
-
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 3rem;
+  margin-bottom: 80px;
 }
 .hero h1,
 .hero p {
@@ -234,8 +231,9 @@ em {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   max-width: 540px;
-  gap: 2rem;
+  gap: 1rem;
   text-align: center;
 }
 .hero .left-image {
@@ -250,12 +248,14 @@ em {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 72px;
 }
 .second-section .image-gallery {
   display: flex;
   max-width: 1110px;
   gap: 30px;
   justify-content: center;
+  margin-bottom: 80px;
 }
 .second-section .image-gallery picture img {
   border-radius: 0.5rem;
@@ -264,12 +264,13 @@ em {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   max-width: 540px;
-  gap: 2rem;
+  gap: 1rem;
   text-align: center;
 }
 .second-section .offer .titles {
-  gap: 0.5rem;
+  gap: 1rem;
 }
 .second-section .offer .titles h6 {
   color: hsl(192, 37%, 48%);
@@ -286,14 +287,14 @@ em {
   background-size: cover;
   background-position: center;
   justify-content: center;
+  margin-top: -92px;
 }
 .banner .text-offer {
   padding: 100px 0px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 1110px;
-  gap: 5rem;
+  align-items: flex-start;
+  max-width: 1110px;
+  gap: 4rem;
   z-index: 99999;
 }
 .banner .on-dark {
