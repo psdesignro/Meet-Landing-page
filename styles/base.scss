@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 540px;
+  max-width: $box-width;
   gap: 2rem;
   text-align: center;
 }
@@ -45,7 +45,7 @@
 
   .image-gallery {
     display: flex;
-    max-width: 1110px;
+    max-width: $container-width;
     gap: 30px;
     justify-content: center;
 
@@ -74,27 +74,35 @@
   height: 308px;
   position: relative;
   width: 100%;
-  height: auto;
   background-image: url("/starter-code/assets/desktop/image-footer.jpg");
   background-size: cover;
   background-position: center;
+  justify-content: center;
 
-  .text-offer{
+  .text-offer {
     padding: 100px 0px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $container-width;
+    gap: 5rem;
     z-index: 99999;
   }
+  .on-dark{
+    color: $neutral-white;
+  }
+
+ 
+
 }
 
-.banner::before{
-    content: '';
+.banner::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba($primary-teal, 0.9);
-  pointer-events: none; 
-
+  pointer-events: none;
 }
-

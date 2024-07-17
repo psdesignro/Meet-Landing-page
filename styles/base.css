@@ -171,6 +171,49 @@ em {
   border-radius: 100px;
 }
 
+.primary-button {
+  display: flex;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  font-weight: 900;
+  font-size: 16px;
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(192, 37%, 48%);
+}
+.primary-button span {
+  color: rgba(250, 250, 250, 0.4);
+}
+.primary-button:hover {
+  background-color: hsl(192, 90%, 77%);
+}
+
+.secondary-button {
+  display: flex;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  font-weight: 900;
+  font-size: 16px;
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(268, 34%, 53%);
+}
+.secondary-button span {
+  color: rgba(250, 250, 250, 0.4);
+}
+.secondary-button:hover {
+  background-color: hsl(268, 100%, 86%);
+}
+
+.banner button {
+  align-self: center;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+}
+
 .hero {
   display: flex;
   justify-content: space-between;
@@ -233,15 +276,22 @@ em {
   height: 308px;
   position: relative;
   width: 100%;
-  height: auto;
   background-image: url("/starter-code/assets/desktop/image-footer.jpg");
   background-size: cover;
   background-position: center;
+  justify-content: center;
 }
 .banner .text-offer {
   padding: 100px 0px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1110px;
+  gap: 5rem;
   z-index: 99999;
+}
+.banner .on-dark {
+  color: hsl(0, 0%, 98%);
 }
 
 .banner::before {

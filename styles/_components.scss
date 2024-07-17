@@ -37,3 +37,53 @@
   border: 1px solid rgba($light-text, 0.25);
   border-radius: 100px;
 }
+
+
+//Buttons
+
+@mixin button-style{
+    display: flex;
+    border:none;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    font-weight: $font-weight-black;
+    font-size: $font-size-sm;
+    color:$neutral-white;
+
+
+    span{
+        color: rgba($neutral-white, 0.4);
+    }
+
+}
+
+.primary-button{
+    @include button-style;
+    background-color: $primary-teal;
+
+    &:hover{
+        background-color: $light-teal;
+    }
+}
+
+.secondary-button{
+    @include button-style;
+    background-color: $secondary-purple;
+
+    &:hover{
+        background-color: $light-purple;
+    }
+}
+
+
+.banner  button{
+    align-self: center;
+    // max-height: 58px;
+   
+  }
+
+
+.button-group{
+    display: flex;
+    gap:1rem;
+}
