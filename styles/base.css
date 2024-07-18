@@ -301,7 +301,7 @@ em {
   color: hsl(0, 0%, 98%);
 }
 
-.banner::before {
+.banner::after {
   content: "";
   position: absolute;
   top: 0;
