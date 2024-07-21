@@ -3,7 +3,6 @@
 @import "typography";
 @import "colors";
 @import "components";
-@import "media-queries";
 
 @mixin text-group {
   display: flex;
@@ -39,8 +38,6 @@
     margin-right: -2rem;
   }
 }
-
-
 
 .second-section {
   display: flex;
@@ -85,27 +82,19 @@
   background-size: cover;
   background-position: center;
   justify-content: center;
-  margin-top:-92px;
+  margin-top: -92px;
 
   .text-offer {
     padding: 100px 0px;
-    // display: grid;
-    // grid-template-columns: 2fr 3fr 1fr;
     display: flex;
-    // flex:1;
-    // flex-basis: 100px;
     align-items: flex-start;
-    // justify-content: center;
     max-width: $container-width;
     gap: 4rem;
     z-index: 99999;
   }
-  .on-dark{
+  .on-dark {
     color: $neutral-white;
   }
-
- 
-
 }
 
 .banner::after {
@@ -118,3 +107,5 @@
   background-color: rgba($primary-teal, 0.9);
   pointer-events: none;
 }
+
+@import "media-queries";
