@@ -169,6 +169,7 @@ em {
   align-items: center;
   gap: 3rem;
   margin-bottom: 80px;
+  overflow: hidden;
 }
 .hero h1,
 .hero p {
@@ -201,6 +202,7 @@ em {
   justify-content: center;
   align-items: center;
   margin-bottom: 72px;
+  padding: auto 1.5rem auto 1.5rem;
 }
 .second-section .image-gallery {
   display: flex;
@@ -247,7 +249,7 @@ em {
   margin-top: -92px;
 }
 .banner .text-offer {
-  padding: 100px 0px;
+  padding: 100px 1rem;
   display: flex;
   align-items: flex-start;
   max-width: 1110px;
@@ -334,13 +336,13 @@ em {
     margin-bottom: 0;
   }
   .second-section .offer {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
   }
   .second-section .image-gallery {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     flex-wrap: wrap;
     gap: 24px;
     margin: 48px 0 64px 0;
@@ -356,7 +358,7 @@ em {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    margin: 0 1rem;
+    margin: 0 1.5rem;
     padding: 92px 0 64px 0;
   }
   .banner .text-offer p,
@@ -425,7 +427,7 @@ em {
     margin: 0 5rem;
     padding: 92px 0 64px 0;
   }
-  .banner .text-offer p {
+  .banner .text-offer p, .banner .text-offer h2 {
     text-align: center;
   }
 }/*# sourceMappingURL=main.css.map */
