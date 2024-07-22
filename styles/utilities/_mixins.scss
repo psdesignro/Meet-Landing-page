@@ -1,0 +1,10 @@
+
+@mixin text-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: $box-width;
+    gap: 1rem;
+    text-align: center;
+  }
